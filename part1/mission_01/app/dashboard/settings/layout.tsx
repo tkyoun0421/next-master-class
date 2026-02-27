@@ -7,7 +7,6 @@ export default function SettingsLayout({ children }: { children: React.ReactNode
       <div className="flex flex-col gap-4">
         <h1 className="text-3xl font-bold text-black dark:text-white">환경 설정</h1>
         
-        {/* Settings Top Tabs */}
         <nav className="flex gap-4 border-b border-zinc-200 dark:border-zinc-800 pb-2">
           <Link 
             href="/dashboard/settings" 
