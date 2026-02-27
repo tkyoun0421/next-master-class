@@ -27,6 +27,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="bg-blue-600 text-white p-3 flex items-center justify-center gap-4 sticky top-0 z-50">
+          <span className="font-semibold">
+            대시보드 전역 공지: Nexus 시스템 정기점검 완료
+          </span>
+          <input
+            type="text"
+            placeholder="상태가 유지되는지 확인하세요"
+            className="text-black px-3 py-1 rounded w-64 outline-none"
+          />
+        </div>
         {children}
       </body>
     </html>
