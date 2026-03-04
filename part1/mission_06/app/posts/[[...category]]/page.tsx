@@ -23,7 +23,6 @@ export default async function BlogCategoryPage({ params, searchParams }: PagePro
 
   let filteredPosts = [...allPosts];
 
-  // 카테고리 필터링
   if (category.length > 0) {
     filteredPosts = filteredPosts.filter((post) => 
       category.every((cat, index) => post.path[index] === cat)
