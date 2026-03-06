@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import FileSearch from "@/components/FileSearch";
 
-// 1. 10개의 시스템 데이터 정의
 const fileSystem = [
   { id: 1, name: "2024_연봉계약서.pdf", path: ["documents", "work"], ext: "pdf", size: "1.2MB" },
   { id: 2, name: "프로젝트_기획안.pdf", path: ["documents", "work"], ext: "pdf", size: "3.5MB" },
