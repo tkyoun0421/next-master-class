@@ -5,9 +5,13 @@ import { useState } from "react";
 export default function BookmarkButton({ subject }: { subject: string }) {
   const [isBookmarked, setIsBookmarked] = useState(false);
 
+  const handleClick = () => {
+    setIsBookmarked(!isBookmarked);
+  };
+
   return (
     <button
-      onClick={() => setIsBookmarked(!isBookmarked)}
+      onClick={handleClick}
       className={`px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${
         isBookmarked
           ? "bg-yellow-100 text-yellow-800 border-yellow-300 hover:bg-yellow-200"
