@@ -34,7 +34,7 @@ export default async function DeviceDetailPage({ params }: Props) {
 
         <div className="py-8 border-y border-slate-100 flex items-center justify-between">
           <div className="text-lg font-medium text-slate-700">Power Status</div>
-          <ToggleButton initialStatus={device.status} deviceId={device.id} />
+          <ToggleButton initialStatus={device.status} />
         </div>
       </div>
     </div>

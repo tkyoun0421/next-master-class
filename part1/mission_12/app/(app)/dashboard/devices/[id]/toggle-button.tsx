@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function ToggleButton({ initialStatus, deviceId }: { initialStatus: string, deviceId: string }) {
+export default function ToggleButton({ initialStatus }: { initialStatus: string }) {
   const [isOn, setIsOn] = useState(initialStatus === 'on');
 
   return (
